@@ -14,7 +14,7 @@ const database =module.exports =() =>{
     }
                  
              
-}
+};
 
 // const connectDatabase =( )=>{
     
