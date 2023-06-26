@@ -6,6 +6,7 @@ const catchAsyncError = require("../middleware/catchAsyncError");
 //Create Product --Admin
 exports.createProduct = catchAsyncError(async (req,res,next)=>{
 
+    req.body.user = req.user.id;
     const product = await Product.create(req.body);
 
     res.status(201).json({
@@ -18,7 +19,7 @@ exports.createProduct = catchAsyncError(async (req,res,next)=>{
 exports.getAllProducts = catchAsyncError(async (req,res) =>{
 
     const products = await Product.find();
-    res.status(200).jason({
+    res.status(200).json({
         success:true,
         products
     });
