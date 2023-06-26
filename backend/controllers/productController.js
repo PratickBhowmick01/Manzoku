@@ -14,6 +14,7 @@ exports.createProduct = async (req,res,next)=>{
 
 }
 
+// View all products 
 exports.getAllProducts = async (req,res) =>{
 
     const products = await Product.find();
@@ -22,6 +23,7 @@ exports.getAllProducts = async (req,res) =>{
         products
     });
 }
+
 
 exports.getProductDetails = async(req,res,next)=>{
     const product = await Product.findById(req.params.id);
