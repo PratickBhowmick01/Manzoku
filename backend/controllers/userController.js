@@ -1,6 +1,7 @@
 const sendToken = require("../utils/jwtToken.js");
 const catchAsyncError = require("../middleware/catchAsyncError");
 const User = require("../models/userModel.js");
+const ErrorHandler = require("../utils/errorhandler.js");
 
 // Register a user 
 exports.registerUser = catchAsyncError (async (req, res, next) => {
@@ -60,10 +61,60 @@ exports.logoutUser = catchAsyncError (async (req, res, next) => {
 });
 
 // Get User details 
-// exports.showUserDetails = catchAsyncError(async (req,res,next) => {
+exports.showUserDetails = catchAsyncError(async (req,res,next) => {
 
-//     const id = req.user._id;
+    const id = req.user.id;
 
-//     const user = await User.findById
+    const user = await User.findById(id)
+    res.status(200).json({
+        success: true,
+        user
+    });
 
-// });
+});
+
+// Get all users 
+exports.getAllUsers = catchAsyncError(async (req, res) => {
+    
+    const allUsers = await User.find()
+    res.status(200).json({
+        success: true,
+        allUsers
+    })
+})
+
+// Get admin info
+exports.getAdminUsers = catchAsyncError(async (req, res, next) => {
+    
+    const id = req.params.id;
+
+    const users = await User.findById(id);
+
+    if(!users){
+        return next(
+            new ErrorHandler(`User does not exist with ${req.params.id}`)
+        );
+    }
+
+    res.status(200).json({
+        success: true,
+        users
+    })
+})
+
+// Delete User Admin 
+exports.deleteUser = catchAsyncError( async (req,res, next) => {
+    const id = req.params.id
+
+    const removeUser = await User.findByIdAndDelete(id)
+
+    if(!removeUser) {
+        return next(new ErrorHandler(`User does not exist with ${id}`))
+    }
+
+    res.status(200).json({
+        success:true,
+        removeUser
+    })
+})
+
