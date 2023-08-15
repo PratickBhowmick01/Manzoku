@@ -1,7 +1,7 @@
 body{
-    background-color: #272829;
+    background-color: #1d1d1d;
 }
-.login {
+.RegisterUser {
     min-height: screen;
     display: flex;
     align-items: center;
@@ -9,18 +9,18 @@ body{
     margin-top: 8rem;
 }
 
-.inside-box {
+.box {
     background-color: white;
     display: flex;
     height: 30rem;
-    width:50%;
+    width:55%;
     border-radius: 15px;
     box-shadow: 3px 8px 10px white;
 }
 
-.left-user img{
+.left img{
     display: inline-block none;
-    width: 350px;
+    width: 420px;
     border-radius: 30px;
     margin-right: 10px;
     height: 28rem;
