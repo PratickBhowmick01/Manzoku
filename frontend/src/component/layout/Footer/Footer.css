@@ -1,0 +1,48 @@
+footer {
+    margin-top: 10vmax;
+    padding: 2.4max;
+    background-color: rgb(34,33,33);
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+.leftFooter{
+    margin-left: 10vmax;
+}
+
+.leftFooter > img {
+    padding-top: 0.7vmax;
+    padding-left: 2.3vmax;
+    padding-bottom: 0.6vmax;
+    height: 55px;
+    width: 200px;
+}
+
+
+.leftFooter > div {
+    font-family: "Book Antiqua", "Roboto";
+    font-size: 1.4vmax;
+    width: 99%;
+    padding-top: 2vmax;
+    text-align: center;
+}
+
+.leftFooter > h1 {
+    font-family: "Book Antiqua", "Roboto";
+    font-size: 1.4vmax;
+    width: 99%;
+    padding-top: 2.6vmax;
+    text-align: center;
+}
+
+.rightFooter {
+    font-family: "Book Antiqua", "Roboto";
+    font-size: 2vmax;
+    width: 99%;
+    padding-left: 18vmax;
+}
+
+.rightFooter > h1{
+    padding-left: 6vmax;
+}
