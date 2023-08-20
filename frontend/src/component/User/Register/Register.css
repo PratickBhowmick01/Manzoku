@@ -1,0 +1,92 @@
+body{
+    background-color: #1d1d1d;
+}
+.RegisterUser {
+    min-height: screen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+}
+
+.box {
+    background-color: white;
+    display: flex;
+    height: 30rem;
+    width:55%;
+    border-radius: 15px;
+    box-shadow: 3px 8px 10px white;
+}
+
+.left img{
+    display: inline-block none;
+    width: 420px;
+    border-radius: 30px;
+    margin-right: 10px;
+    height: 28rem;
+    padding: 20px;
+}
+
+.right {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.right>h2{
+    font-weight: bold;
+    font-size: xx-large;
+}
+.right>p{
+    font-size: small;
+    margin-top: 4px;
+}
+
+.right >form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right>input{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.email{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    margin-top: 8px;
+}
+.pass{
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+}
+
+.log-button{
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    border-color: white;
+    color: white;
+    background-color: black;
+    width: 100px;
+    margin-left: 30%;
+}
+
+.log-button:hover{
+    cursor: pointer;
+    background: none;
+    color: black;
+    border: 2px solid #c1c1c1;
+}
+.register{
+    font-size: small;
+    margin-top: 4px;
+    margin-left: 50px;
+    color: black;
+}
