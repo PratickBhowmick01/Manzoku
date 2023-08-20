@@ -10,6 +10,7 @@ body{
 }
 
 .box {
+    margin-top: -4vmax;
     background-color: white;
     display: flex;
     height: 30rem;
@@ -23,8 +24,10 @@ body{
     width: 420px;
     border-radius: 30px;
     margin-right: 10px;
-    height: 28rem;
+    margin-top: 2vmax;
+    height: 24rem;
     padding: 20px;
+    color: #c1c1c1;
 }
 
 .right {
@@ -32,9 +35,11 @@ body{
     margin-right: 10px;
 }
 
-.right>h2{
+.right > h2 {
+    margin-left: 55px;
     font-weight: bold;
     font-size: xx-large;
+    
 }
 .right>p{
     font-size: small;

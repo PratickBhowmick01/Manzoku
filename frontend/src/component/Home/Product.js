@@ -4,12 +4,11 @@ import ReactStars from "react-rating-stars-component";
 
 const options = {
     edit: false,
-    color: "rgba(0,0,0,0.1)",
-    activeColor: "black",
+    color: "rgba(255,255,255,0)",
+    activeColor: "white",
     size: window.innerWidth < 600 ? 20 : 25,
     value: 4.5,
     isHalf: true,
-
 };
 
 const Product = ({ product }) => {

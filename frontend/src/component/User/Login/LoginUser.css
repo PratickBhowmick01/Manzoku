@@ -10,7 +10,8 @@ body{
 }
 
 .inside-box {
-    background-color: white;
+    margin-top: -7vmax;
+    background-color: rgba(255, 255, 255, 0.988);
     display: flex;
     height: 30rem;
     width:50%;
@@ -19,24 +20,29 @@ body{
 }
 
 .left-user img{
+    margin-top: 6vmax;
     display: inline-block none;
     width: 350px;
     border-radius: 30px;
     margin-right: 10px;
-    height: 28rem;
+    height: 18rem;
     padding: 20px;
 }
 
 .right {
     width: 50%;
+    margin-top: 7vmax;
     margin-right: 10px;
+    
 }
 
-.right>h2{
+.right > h2 {
+    margin-right: -1vmax;
     font-weight: bold;
     font-size: xx-large;
 }
 .right>p{
+    margin-left: 1vmax;
     font-size: small;
     margin-top: 4px;
 }
@@ -52,6 +58,12 @@ body{
     border-radius: 10px;
     border-color: black;
 }
+
+.right > form > a {
+    margin-right: 3vmax;
+    text-align: center;
+}
+
 
 .email{
     padding: 10px;

@@ -1,7 +1,7 @@
-import React from 'react'
-import './LoginUser.css'
-import anime from "../../../img/pikachu.jpeg"
-import { useNavigate } from 'react-router-dom'
+import React from 'react';
+import './LoginUser.css';
+import anime from "../../../images/login.png";
+import { useNavigate } from 'react-router-dom';
 
 const LoginUser = () => {
   const navigate = useNavigate()
@@ -13,7 +13,7 @@ const LoginUser = () => {
         </div>
         <div className="right">
           <h2 >Login</h2>
-          <p>If you are already a member, please Log in</p>
+          <p>If already a member, please log in</p>
           <form action="">
             <input className='email' type="text" name='email' placeholder='Email' />
             <input className='pass' type="text" name='password' placeholder='Password' />

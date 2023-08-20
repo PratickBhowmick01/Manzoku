@@ -7,25 +7,27 @@
 }
 
 .banner > div > h1 {
+    background-color: rgba(219, 219, 219, 0.265);
     position: absolute;
     margin-top: -120vmax;
-    
+    border-radius: 200px;
     font: 600 2.4vmax "Book Antiqua";
-    color: rgb(43, 21, 0);
+    color: rgb(0, 0, 0);
 }
 
 .banner > div > p {
     position: absolute;
-    
+    background-color: rgba(219, 219, 219, 0.223);
+    border-radius: 600px;
     margin-top: -136vmax;
     font: 600 4vmax "Book Antiqua";
-    color: #2b1700;
+    color: #190e02;
 
 }
 
 .banner > img {
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(2.5vmax);
+  -webkit-filter: blur(2.5px);
 
   height: 100%; 
   position: relative;
@@ -38,6 +40,7 @@
     
     position: absolute;
     margin-top: -55vmax;
+    margin-left: -4vmax;
     cursor:pointer;
     background-color: black;
     border: 4px solid black;
@@ -59,11 +62,11 @@
     text-align: center;
     font: "Book Antiqua";
     font-size: 2vmax;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(255, 255, 255);
     width: 20vmax;
     padding: 1vmax;
     margin: 4.9vmax auto;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .container {
@@ -79,7 +82,7 @@
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    color: #272829;
+    color: #ffffff;
     margin: 2vmax;
     transition: all 0.4;
     padding-bottom: 0.5vmax;

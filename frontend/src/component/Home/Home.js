@@ -3,6 +3,8 @@ import { CgMouse } from "react-icons/all";
 import Homepage from "../../images/Homepage.png";
 import "./Home.css";
 import Product from "./Product.js";
+import Header from "../layout/Header/Header.js";
+import Footer from "../layout/Footer/Footer.js";
 
 const product = {
     name: "Gojo Satoru Action Figure",
@@ -16,6 +18,7 @@ const product = {
 const Home = () => {
     return (
     <Fragment>
+        <Header />
         <div className="banner">
             <img src={Homepage} alt="Homepage" />
             <div>
@@ -46,7 +49,7 @@ const Home = () => {
             <Product product={product} />
             <Product product={product} />
         </div>
- 
+        <Footer />
 
     </Fragment>
     );
