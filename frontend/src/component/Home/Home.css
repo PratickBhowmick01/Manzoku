@@ -6,24 +6,22 @@
     justify-content: center;
 }
 
-.banner > div > h1 {
-    background-color: rgba(219, 219, 219, 0.265);
-    position: absolute;
-    margin-top: -120vmax;
-    border-radius: 200px;
-    font: 600 2.4vmax "Book Antiqua";
-    color: rgb(0, 0, 0);
-}
+
 
 .banner > div > p {
     position: absolute;
     background-color: rgba(219, 219, 219, 0.223);
     border-radius: 600px;
-    margin-top: -136vmax;
-    font: 600 4vmax "Book Antiqua";
+    margin-top: -130vmax;
+    font: 600 5vmax "Book Antiqua";
     color: #190e02;
 
 }
+
+.banner > div > p > b {
+    color: #27211a;
+}
+
 
 .banner > img {
   filter: blur(2vmax);
@@ -39,7 +37,7 @@
 .banner > div > a > button {
     
     position: absolute;
-    margin-top: -55vmax;
+    margin-top: -57vmax;
     margin-left: -4vmax;
     cursor:pointer;
     background-color: black;

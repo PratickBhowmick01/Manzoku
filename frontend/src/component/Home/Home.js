@@ -22,9 +22,8 @@ const Home = () => {
         <div className="banner">
             <img src={Homepage} alt="Homepage" />
             <div>
-                <p>Welcome to <i>Manzoku</i></p>
+                <p>Welcome to <b>Manzoku</b></p>
                 
-                <h1>FIND UNIQUE ANIME MERCHANDISES BELOW</h1>
 
                 <a href="#container">
                     <button>

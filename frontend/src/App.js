@@ -1,8 +1,6 @@
 import './App.css';
-import Header from "./component/layout/Header/Header.js";
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import React, { Suspense } from "react";
-import Footer from "./component/layout/Footer/Footer.js";
 import Home from "./component/Home/Home.js";
 import LoginUser from './component/User/Login/LoginUser.jsx';
 import Register from './component/User/Register/Register.jsx';
