@@ -18,12 +18,9 @@ function App() {
     store.dispatch(loadUser());
   }, []);
 
-  {isAuthenticated && <Options user={user}/>}
-  if (isAuthenticated){
     return (
-      // {isAuthenticated && <Options user={user}/>}
       <Suspense>
-        <Options user={user}/>
+       {isAuthenticated && <Options user={user}/>}
         <BrowserRouter>
           <Routes>
           <Route exact path="/" element={<Home />} />
@@ -35,7 +32,4 @@ function App() {
        </Suspense>
     )
   }
-
-
-}
 export default App;
