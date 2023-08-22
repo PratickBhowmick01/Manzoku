@@ -1,14 +1,15 @@
 import React, { Fragment, useState, useEffect} from 'react'
 import './LoginUser.css'
-import anime from "../../../img/pikachu.jpeg"
+import anime from "../../../images/login.png"
 import Loader from '../../layout/Loader/Loader'; 
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { clearErrors, login } from '../../../actions/userAction';
 // import { useAlert } from "react-alert";
 
-const LoginUser = () => {
+const LoginUser = ({history}) => {
 
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   // const alert = useAlert();
 
@@ -16,13 +17,13 @@ const LoginUser = () => {
 
   useEffect(() => {
     if (error) {
-      alert.error(error);
+      alert(error);
       dispatch(clearErrors());
     }
     if(isAuthenticated){
-      
-    }
-  }, [dispatch, error, alert])
+      navigate("/")
+    } 
+  }, [dispatch, error, alert, history, isAuthenticated])
 
 
   const [loginEmail, setLoginEmail] = useState("");
@@ -34,7 +35,6 @@ const LoginUser = () => {
     dispatch(login(loginEmail, loginPassword))
   }
 
-  const navigate = useNavigate()
   return (
     <Fragment>
       {loading ? (

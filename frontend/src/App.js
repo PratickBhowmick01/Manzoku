@@ -1,20 +1,27 @@
 import './App.css';
+import {Routes,Route} from "react-router-dom";
 import React, { Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import Home from "./component/Home/Home.js";
 import LoginUser from './component/User/Login/LoginUser.jsx';
-import Register from './component/User/Register/Register';
-// import Header from "./component/layout/Header/Header.js";
-// import Footer from "./component/layout/Footer/Footer.js"
+import Register from './component/User/Register/Register.jsx';
+import store from "./store"
+import { loadUser } from './actions/userAction';
+
+
 
 function App() {
-    return (
-        <Suspense>
-            <Routes>
-                <Route exact path="/login" Component={LoginUser} />
-                <Route exact path="/register" Component={Register} />
-            </Routes>
-        </Suspense>
-
-    )
+  React.useEffect(()=>{
+    store.dispatch(loadUser());
+  }, []);
+  return (
+    <Suspense>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/login" element={<LoginUser />} />
+      </Routes>
+    </Suspense>
+   
+  );
 }
 export default App;

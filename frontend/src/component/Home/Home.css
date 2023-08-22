@@ -1,0 +1,122 @@
+.banner > div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.banner > div > p {
+    position: absolute;
+    background-color: rgba(219, 219, 219, 0.223);
+    border-radius: 600px;
+    margin-top: -130vmax;
+    font-size: 100px;
+    color: #190e02;
+
+}
+
+.banner > div > p > b {
+    color: #27211a;
+}
+
+
+.banner > img {
+  filter: blur(2vmax);
+  -webkit-filter: blur(2px);
+
+  height: 100%; 
+  position: relative;
+  
+  
+}
+
+
+.banner > div > a > button {
+    
+    position: absolute;
+    margin-top: -57vmax;
+    margin-left: -4vmax;
+    cursor:pointer;
+    background-color: black;
+    border: 4px solid black;
+    color: antiquewhite;
+    border-radius: 20px;
+    padding: 1vmax;
+    transition: all 0.4s;
+    width: 9vmax;
+    font-size: 20px ;
+}
+
+.banner > div > a > button:hover {
+    background-color: #272829;
+    border: 4px solid #272829;
+
+}
+
+.homeHeading {
+    text-align: center;
+    /* font: "Book Antiqua"; */
+    font-size: 2vmax;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    width: 20vmax;
+    padding: 1vmax;
+    margin: 4.9vmax auto;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productCard {
+    width: 14vmax;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 2vmax;
+    transition: all 0.4;
+    padding-bottom: 0.5vmax;
+
+}
+
+.productCard > div {
+    margin: 0.5vmax;
+    margin-top: -0.5vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.productCard > div > span {
+    margin: 0.5vmax;
+    font: 300 1.2vmax ;
+
+}
+
+.productCard > p {
+    font-size: 1.6vmax;
+    margin: 1vmax 0.7vmax;
+    text-align: center;
+}
+
+.productCard > span {
+    text-align: center;
+    font: 300 1.2vmax "Book Antiqua";
+    font-weight: 1000;
+}
+
+.productCard:hover {
+    box-shadow: 0 0 5px rgb(68, 68, 68);
+
+    transform: translateY(-1vmax);
+}

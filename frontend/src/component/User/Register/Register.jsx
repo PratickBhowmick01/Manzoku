@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react'
 import { useNavigate } from 'react-router-dom'
-import anime from "../../../img/naruto.jpeg"
+import anime from "../../../images/register.png"
 import Loader from '../../layout/Loader/Loader'; 
 import { useDispatch, useSelector } from 'react-redux';
 import { clearErrors, register } from '../../../actions/userAction';
@@ -16,6 +16,9 @@ const Register = () => {
     if (error) {
       // alert.error(error);
       dispatch(clearErrors());
+    }
+    if(isAuthenticated){
+      navigate("/")
     }
   }, [dispatch, error])
 
