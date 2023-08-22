@@ -5,6 +5,7 @@ import "./Home.css";
 import Product from "./Product.js";
 import Header from "../layout/Header/Header.js";
 import Footer from "../layout/Footer/Footer.js";
+import Options from "../layout/Header/Options";
 
 const product = {
     name: "Gojo Satoru Action Figure",
@@ -19,7 +20,9 @@ const Home = () => {
     return (
     <Fragment>
         <Header />
+        <Options/>
         <div className="banner">
+        {/* <Options/> */}
             <img src={Homepage} alt="Homepage" />
             <div>
                 <p>Welcome to <b>Manzoku</b></p>
