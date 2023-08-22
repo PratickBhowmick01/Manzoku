@@ -7,8 +7,7 @@ import Register from './component/User/Register/Register.jsx';
 import store from "./store"
 import { loadUser } from './actions/userAction';
 import Options from './component/layout/Header/Options';
-import {  useSelector } from 'react-redux';
-import OptionsButton from './component/layout/Header/OptionsButton';
+import { useSelector } from 'react-redux';
 import ProductDetails from './component/ProductDetails/ProductDetails.js';
 
 function App() {
