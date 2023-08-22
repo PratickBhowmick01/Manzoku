@@ -4,22 +4,156 @@
     padding: 6vmax;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    margin-left: 10vmax;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .CarouselImage {
-    width: 80%;
-    height: 96%;
-    padding: 10px;
+    width: 50%;
+    height: 76%;
 }
 
-.ProductDetails > div {
-    box-sizing: border-box;
-    border: 1px solid rgba(245, 245, 245, 0.024);
-}
+
 
 .detailsBlock-1 > h2 {
     color: antiquewhite;
-    margin-left: 3vmax;
+    margin-left: 2vmax;
+    margin-top: 1vmax;
+    font-size: xx-large;
 }
+
+.detailsBlock-1 > p {
+    margin-top: 1vmax;
+    color: antiquewhite;
+    font-size: x-large;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.612);
+    
+}
+
+.detailsBlock-2 {
+    margin-left: 40vmax;
+    color: rgb(249, 239, 226);
+    
+
+}
+
+.detailsBlock-2 > span {
+    font-size: medium;
+    margin-right: 39vmax;
+}
+
+.detailsBlock-3 {
+    color: antiquewhite;
+    text-align: center;
+}
+
+.detailsBlock-3-1-1 {
+    margin-top: 1vmax;
+    margin-bottom: 1vmax;
+}
+
+.detailsBlock-3-1-1 > button {
+    background-color: rgba(249, 223, 190, 0.936);
+    padding: 0.5vmax;
+    cursor: pointer;
+    color: black;
+    transition: all 0.5s;
+}
+
+.detailsBlock-3-1-1 > button:hover {
+    background-color: rgba(240, 255, 255, 0.438);
+}
+
+.detailsBlock-3-1-1 > input {
+    padding: 0.5vmax;
+    width: 6vmax;
+    text-align: center;
+    font: 400 1.5vmax "Book Antiqua";
+}
+
+.detailsBlock-3-1 > button:last-child {
+    border: none;
+    cursor: pointer;
+    color: black;
+    transition: all 0.5s;
+    background-color: bisque;
+    font: 1000 1.3vmax "Book Antiqua";
+    border-radius: 20px;
+    padding: 0.5vmax 2vmax;
+    margin: 1vmax;
+    outline: none;
+    width: 11vmax;
+    height: 3vmax;
+
+}
+
+.detailsBlock-3-1 > button:last-child:hover {
+    background-color: rgba(255, 228, 196, 0.508);
+}
+
+.detailsBlock-4 {
+    color: antiquewhite;
+    margin-top: 1vmax;
+    font: 1000 1.4vmax "Book Antiqua";
+}
+
+.submitReview {
+    border: none;
+    cursor: pointer;
+    color: rgb(208, 202, 202);
+    transition: all 0.5s;
+    background-color: rgb(69, 39, 2);
+    font: 900 1.3vmax "Book Antiqua";
+    border-radius: 16px;
+    padding: 0.5vmax 2vmax;
+    margin: 1vmax;
+    outline: none;
+    width: 14vmax;
+    height: 3vmax;
+
+}
+
+.submitReview:hover {
+    background-color: rgba(255, 228, 196, 0.508);
+    color: rgb(44, 44, 44);
+}
+
+.reviewsHeading {
+    color: bisque;
+    font: 1000 2vmax "Book Antiqua";
+    text-align: center;
+    border-bottom: 1px solid antiquewhite;
+    padding: 1vmax;
+    width: 20vmax;
+    margin: auto;
+    margin-bottom: 4vmax;
+}
+
+.reviewCard {
+    flex: none;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(250, 235, 215, 0.513);
+    border: 1px solid rgba(250, 235, 215, 0.213);
+    width: 30vmax;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 4vmax;
+    padding: 3vmax;
+    justify-content: center;
+    color: antiquewhite;
+}
+
+.reviewCard > img {
+    width: 5vmax;
+}
+
+.noReviews {
+    font: 800 2vmax "Book Antiqua";
+    text-align: center;
+    color: beige;
+    margin-bottom: 4vmax;
+}
+
+

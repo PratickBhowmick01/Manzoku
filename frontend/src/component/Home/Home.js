@@ -2,11 +2,11 @@ import React, { Fragment, useEffect } from "react";
 import { CgMouse } from "react-icons/all";
 import Homepage from "../../images/Homepage.png";
 import "./Home.css";
-import Product from "./Product.js";
+import ProductCard from "./ProductCard.js";
 import Header from "../layout/Header/Header.js";
 import Footer from "../layout/Footer/Footer.js";
-import Options from "../layout/Header/Options";
-import { getProduct } from "../../actions/productAction.js";
+
+import { clearError, getProduct } from "../../actions/productAction.js";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/loader.js";
 import {useAlert} from "react-alert";
@@ -25,10 +25,11 @@ const Home = () => {
     useEffect(() => {
 
         if (error) {
-            return alert.error(error);
+            alert.error(error);
+            dispatch(clearError());
         }
         dispatch(getProduct());
-    }, [dispatch,error]);
+    }, [dispatch,error,alert]);
 
     return (
     <Fragment>
@@ -37,7 +38,6 @@ const Home = () => {
         ) : (
             <Fragment>
                 <Header />
-                <Options />
                 <div className="banner">
                     <img src={Homepage} alt="Homepage" />
                     <div>
@@ -57,7 +57,7 @@ const Home = () => {
                 </div>
                 <h2 className="homeHeading">Our Featured Products </h2>
                 <div className="container" id="container">
-                    {products && products.map((product) => <Product product={ product } />)}
+                    {products && products.map((product) => <ProductCard product={ product } />)}
                 </div>
                 <Footer />
             </Fragment>
