@@ -48,7 +48,7 @@
     padding: 1vmax;
     transition: all 0.4s;
     width: 9vmax;
-    font: 900 1.4vmax "Book Antiqua";
+    font-size: 20px ;
 }
 
 .banner > div > a > button:hover {
@@ -59,7 +59,7 @@
 
 .homeHeading {
     text-align: center;
-    font: "Book Antiqua";
+    /* font: "Book Antiqua"; */
     font-size: 2vmax;
     border-bottom: 1px solid rgb(255, 255, 255);
     width: 20vmax;
@@ -100,12 +100,11 @@
 
 .productCard > div > span {
     margin: 0.5vmax;
-    font: 300 1.2vmax "Book Antiqua";
+    font: 300 1.2vmax ;
 
 }
 
 .productCard > p {
-    font-family: "Book Antiqua";
     font-size: 1.6vmax;
     margin: 1vmax 0.7vmax;
     text-align: center;

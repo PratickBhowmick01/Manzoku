@@ -5,6 +5,7 @@ import "./Home.css";
 import Product from "./Product.js";
 import Header from "../layout/Header/Header.js";
 import Footer from "../layout/Footer/Footer.js";
+import Options from "../layout/Header/Options";
 import { getProduct } from "../../actions/productAction.js";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/loader.js";
@@ -36,6 +37,7 @@ const Home = () => {
         ) : (
             <Fragment>
                 <Header />
+                <Options />
                 <div className="banner">
                     <img src={Homepage} alt="Homepage" />
                     <div>

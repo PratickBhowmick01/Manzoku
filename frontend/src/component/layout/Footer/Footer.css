@@ -21,7 +21,6 @@ footer {
 
 
 .leftFooter > div {
-    font-family: "Book Antiqua", "Roboto";
     font-size: 1.4vmax;
     width: 99%;
     padding-top: 2vmax;
@@ -29,7 +28,6 @@ footer {
 }
 
 .leftFooter > h1 {
-    font-family: "Book Antiqua", "Roboto";
     font-size: 1.4vmax;
     width: 99%;
     padding-top: 2.6vmax;
@@ -37,7 +35,6 @@ footer {
 }
 
 .rightFooter {
-    font-family: "Book Antiqua", "Roboto";
     font-size: 2vmax;
     width: 99%;
     padding-left: 18vmax;
