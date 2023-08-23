@@ -58,6 +58,14 @@ body{
     border-color: black;
 }
 
+.name {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    margin-top: 8px;
+
+}
+
 .email{
     padding: 10px;
     border-radius: 10px;

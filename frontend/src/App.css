@@ -40,3 +40,11 @@
     margin: 0;
     scroll-behavior: smooth;
 }
+
+.redColor {
+  color: rgb(61, 32, 32);
+}
+
+.greenColor {
+  color: rgb(255, 255, 255);
+}
