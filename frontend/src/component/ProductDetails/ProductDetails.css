@@ -1,0 +1,25 @@
+.ProductDetails {
+    width:100vw;
+    max-width: 100%;
+    padding: 6vmax;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10vmax;
+}
+
+.CarouselImage {
+    width: 80%;
+    height: 96%;
+    padding: 10px;
+}
+
+.ProductDetails > div {
+    box-sizing: border-box;
+    border: 1px solid rgba(245, 245, 245, 0.024);
+}
+
+.detailsBlock-1 > h2 {
+    color: antiquewhite;
+    margin-left: 3vmax;
+}

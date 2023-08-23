@@ -10,10 +10,10 @@
 
 .banner > div > p {
     position: absolute;
-    background-color: rgba(219, 219, 219, 0.223);
+    background-color: rgba(219, 219, 219, 0.696);
     border-radius: 600px;
-    margin-top: -130vmax;
-    font-size: 100px;
+    margin-top: -70vmax;
+    font: 600 5vmax "Book Antiqua";
     color: #190e02;
 
 }
@@ -24,10 +24,11 @@
 
 
 .banner > img {
-  filter: blur(2vmax);
-  -webkit-filter: blur(2px);
+  filter: blur(1.7vmax);
+  -webkit-filter: blur(1.7px);
 
   height: 100%; 
+  width: 100%;
   position: relative;
   
   
@@ -37,7 +38,7 @@
 .banner > div > a > button {
     
     position: absolute;
-    margin-top: -57vmax;
+    margin-top: -27vmax;
     margin-left: -4vmax;
     cursor:pointer;
     background-color: black;

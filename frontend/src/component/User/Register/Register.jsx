@@ -1,7 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react'
 import { useNavigate } from 'react-router-dom'
 import anime from "../../../images/register.png"
-import Loader from '../../layout/Loader/Loader'; 
+import Loader from '../../layout/Loader/loader.js'; 
 import { useDispatch, useSelector } from 'react-redux';
 import { clearErrors, register } from '../../../actions/userAction';
 import './Register.css'
