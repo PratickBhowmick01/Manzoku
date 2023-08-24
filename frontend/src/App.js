@@ -9,6 +9,8 @@ import { loadUser } from './actions/userAction';
 import Options from './component/layout/Header/Options';
 import { useSelector } from 'react-redux';
 import ProductDetails from './component/ProductDetails/ProductDetails.js';
+import products from './component/ProductDetails/Products.js';
+import Search from "./component/ProductDetails/Search.js"
 
 function App() {
   
@@ -27,6 +29,9 @@ function App() {
             <Route exact path="/product/:id" element={<ProductDetails />} />
             <Route exact path="/register" element={<Register />} />
             <Route exact path="/login" element={<LoginUser />} />
+            <Route exact path="/products" element={<Products />} />
+            <Route path="/products/:keyword" element={<Products />} />
+            <Route exact path="/search" element={<Search />} />
           </Routes>
     
           
