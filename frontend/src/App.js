@@ -11,6 +11,7 @@ import { useSelector } from 'react-redux';
 import ProductDetails from './component/ProductDetails/ProductDetails.js';
 import Cart from "./component/Cart/Cart.js";
 import Products from "./component/Products/Products.js";
+import About from "./component/Info/About.js";
 
 function App() {
   
@@ -31,6 +32,7 @@ function App() {
             <Route exact path="/login" element={<LoginUser />} />
             <Route exact path="/Cart" element={<Cart />} />
             <Route exact path="/product" element={<Products />} />
+            <Route exact path="/about" element={<About />} />
           </Routes>
     
           
