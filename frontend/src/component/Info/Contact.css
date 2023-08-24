@@ -1,4 +1,4 @@
-.AboutUs > h1 {
+.ContactUs > h1 {
     color: rgb(27, 26, 26);
     font: 1000 2vmax "Book Antiqua";
     text-align: center;
@@ -14,7 +14,8 @@
     
 }
 
-.AboutUs > p {
+
+.ContactUs > div {
     flex: none;
     flex-direction: column;
     box-shadow: 0 0 5px rgba(60, 60, 59, 0.513);
@@ -31,12 +32,13 @@
     color: rgb(0, 0, 0);
     font: 1000 1.4vmax "Book Antiqua";
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.135);
 }
 
 
 
 
-.AboutUs > img {
+.ContactUs > img {
     filter: blur(1.7vmax);
     -webkit-filter: blur(1.7px);
   

@@ -67,7 +67,7 @@ const ProductDetails = () => {
             {loading ? (
                 <Loader />
             ) : (
-                        <Fragment>
+                <Fragment>
                 <Header />
                 <div className="ProductDetails">
                     <div>
@@ -106,8 +106,8 @@ const ProductDetails = () => {
                             </div>
                             <p>
                                 Status:{" "}
-                                <b className={product.Stock < 1 ? "redColor" : "greenColor"}>
-                                    {product.Stock < 1 ? "OutOfStock" : "InStock"}
+                                <b className={product.stock < 1 ? "redColor" : "greenColor"}>
+                                    {product.stock < 1 ? "OutOfStock" : "InStock"}
 
                                 </b>
                             </p>

@@ -21,6 +21,7 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "3.11",
+    "react-js-pagination": "^3.0.3",
     "react-material-ui-carousel": "^3.4.2",
     "react-rating-stars-component": "^2.2.0",
     "react-redux": "^8.1.2",
@@ -57,5 +58,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://192.168.65.64:4000"
+  "proxy": "http://192.168.1.102:4000"
 }

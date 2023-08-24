@@ -42,7 +42,7 @@ const Cart = () => {
                 <RemoveShoppingCartIcon />
 
                 <Typography>No product in your cart</Typography>
-                <Link to="/product">View Products</Link>
+                <Link to="/products">View Products</Link>
             </div>
         ): (
         <Fragment>
