@@ -1,0 +1,53 @@
+.CartItemCard {
+    display: flex;
+    padding: 1vmax;
+    height: 8vmax;
+    margin-left: 4vmax;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.CartItemCard > img {
+    width: 5vmax;
+}
+
+.CartItemCard > div {
+    display: flex;
+    margin: 0.3vmax 1vmax;
+    flex-direction: column;
+}
+
+.CartItemCard > div > a {
+    font: 1100 2.9vmax cursive;
+    color: rgb(246, 242, 238);
+    text-decoration: none;
+}
+
+.CartItemCard > div > span {
+    font: 1100 2.9vmax "Book Antiqua";
+    color: rgb(240, 237, 234);
+}
+
+.CartItemCard > div > p {
+    color: rgb(208, 129, 10);
+    font: 1100 2.8vmax "Book Antiqua";
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .CartItemCard {
+        padding: 3vmax;
+        height: 25vmax;
+    }
+    
+    .CartItemCard > img {
+        width: 10vmax;
+    }
+    
+    .CartItemCard > div {
+        margin: 1vmax 2vmax;
+    }
+
+    
+}
+

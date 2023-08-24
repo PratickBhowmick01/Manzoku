@@ -1,0 +1,134 @@
+.emptyCart {
+    margin: auto;
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vmax;
+
+    color: aliceblue;
+}
+
+.emptyCart > svg {
+    font-size: 7vmax;
+    color: rgb(165, 164, 161);
+}
+
+.emptyCart > p {
+    font-size: 3vmax;
+}
+
+.emptyCart > a {
+    background-color: rgb(249, 214, 168);
+    color: black;
+    border: none;
+    padding: 1vmax 3vmax;
+    cursor: pointer;
+    font: 1000 1.2vmax "Book Antiqua";
+    text-decoration: none;
+    
+}
+
+
+
+.cartPage {
+    padding: 6vmax;
+
+}
+
+.cartHeader {
+    background-color: antiquewhite;
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+    color: black;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    font: 2000 2vmax "Book Antiqua";
+}
+
+.cartHeader > p {
+    margin: 10px;
+}
+
+.cartHeader >p:last-child {
+    text-align: end;
+}
+
+.cartContainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+}
+
+.cartInput {
+    display: flex;
+    align-items: center;
+    padding: 0.5vmax;
+    height: 8vmax;
+    flex-direction: row;
+}
+
+.cartInput > button {
+    background-color: rgba(242, 225, 184, 0.936);
+    padding: 0.5vmax;
+    cursor: pointer;
+    color: black;
+    transition: all 0.5s;
+}
+
+.cartInput > button:hover {
+    background-color: rgba(240, 255, 255, 0.438);
+}
+
+.cartInput > input {
+    padding: 0.5vmax;
+    width: 3vmax;
+    text-align: center;
+    font: 400 1.5vmax "Book Antiqua";
+}
+
+.cartSubtotal {
+    display: flex;
+    padding: 0.6vmax;
+    height: 8vmax;
+    align-items: center;
+    box-sizing: border-box;
+    font: 1000 2vmax cursive;
+    justify-content: flex-end;
+    color: beige;
+}
+
+.cartTotalProfit {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr;
+}
+
+.cartTotalProfitBox {
+    border-top: 3px solid antiquewhite;
+    margin: 1vmax 4vmax;
+    box-sizing: border-box;
+    padding: 2vmax 0;
+    font: 1000 1.4vmax "Book Antiqua";
+    display: flex;
+    justify-content: space-between;
+    color: rgb(222, 217, 211);
+}
+
+.checkOutBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.checkOutBtn > button {
+    background-color: rgb(247, 236, 222);
+    color: black;
+    border: none;
+    padding: 0.8vmax 4vmax;
+    margin: 1vmax 4vmax;
+    cursor: pointer;
+    border-radius: 30px;
+}
