@@ -11,6 +11,7 @@ import { useSelector } from 'react-redux';
 import ProductDetails from './component/ProductDetails/ProductDetails.js';
 import Profile from './component/User/Profile/Profile';
 import ProtectedRoute from './component/Route/ProtectedRoute';
+import Dashboard from "./component/Admin/Dashboard.jsx"
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/login" element={<LoginUser />} />
         <Route exact path="/Account" element={<Profile />} />
+        <Route isAdmin={true} exact path="/admin/dashboard" element={<Dashboard />} />
       </Routes>
 
 

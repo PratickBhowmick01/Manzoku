@@ -2,12 +2,11 @@ import React, { Fragment, useEffect } from "react";
 import { CgMouse } from "react-icons/all";
 import Homepage from "../../images/Homepage.png";
 import "./Home.css";
-import Product from "./Product.js";
+import ProductCard from "../Home/ProductCard";
 import Header from "../layout/Header/Header.js";
 import Footer from "../layout/Footer/Footer.js";
 import Options from "../layout/Header/Options";
 import { getProduct } from "../../actions/productAction.js";
-import { loadUser } from "../../actions/userAction";
 import { loadUser } from "../../actions/userAction";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/loader.js";
@@ -64,7 +63,7 @@ const Home = () => {
                 </div>
                 <h2 className="homeHeading">Our Featured Products </h2>
                 <div className="container" id="container">
-                    {products && products.map((product) => <Product product={ product } />)}
+                    {products && products.map((product) => <ProductCard product={ product } />)}
                 </div>
                 <div className="buttons">
                 {!isAuthenticated ? <button className="Sign-Up" onClick={() => navigate("/register")}>Sign Up </button>: "" }
