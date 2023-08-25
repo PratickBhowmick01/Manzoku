@@ -17,7 +17,7 @@ import SideBar from "../Sidebar/Sidebar";
 import { UPDATE_PRODUCT_RESET } from "../../../constants/productConstants";
 import { useNavigate, useParams } from "react-router-dom";
 
-const UpdateProduct = ({ match }) => {
+const UpdateProduct = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 

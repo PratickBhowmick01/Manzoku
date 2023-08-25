@@ -15,6 +15,7 @@ import Dashboard from "./component/Admin/Dashboard.jsx"
 import ProductList from "./component/Admin/ProductList/ProductList"
 import CreateProduct from './component/Admin/CreateProduct/CreateProduct';  
 import UpdateProduct from './component/Admin/UpdateProduct/UpdateProduct';
+import UsersList from './component/Admin/UsersList/UsersList';
 
 function App() {
 
@@ -37,6 +38,8 @@ function App() {
         <Route  exact path="/admin/products" element={<ProductList />} />
         <Route exact path="/admin/product" element={<CreateProduct/>} />
         <Route exact path="/admin/product/:id" element={<UpdateProduct/>} />
+        <Route exact path="/admin/users" element={<UsersList/>} />
+        <Route exact path="/admin/user/:id" element={<UsersList/>} />
       </Routes>
 
 

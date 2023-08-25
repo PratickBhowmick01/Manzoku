@@ -15,7 +15,7 @@ const Dashboard = () => {
     const dispatch = useDispatch();
 
     const { products } = useSelector((state)=> state.products);
-    // const { user } = useSelector((state)=> state.user)
+    const { users } = useSelector((state)=> state.allUsers)
     
 
      let outOfStock = 0;
@@ -28,7 +28,7 @@ const Dashboard = () => {
 
     useEffect(()=>{
         dispatch(getAdminProduct());
-        // dispatch(getAllUsers());
+        dispatch(getAllUsers());
     }, [dispatch]);
 
 
@@ -77,7 +77,7 @@ const Dashboard = () => {
                         </Link>
                         <Link to="/admin/users">
                             <p>Users</p>
-                            <p>40</p>
+                            <p>{users && users.length}</p>
                         </Link>
                     </div>
                 </div>
