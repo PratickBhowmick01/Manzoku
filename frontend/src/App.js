@@ -12,6 +12,9 @@ import ProductDetails from './component/ProductDetails/ProductDetails.js';
 import Profile from './component/User/Profile/Profile';
 import ProtectedRoute from './component/Route/ProtectedRoute';
 import Dashboard from "./component/Admin/Dashboard.jsx"
+import ProductList from "./component/Admin/ProductList/ProductList"
+import CreateProduct from './component/Admin/CreateProduct/CreateProduct';  
+import UpdateProduct from './component/Admin/UpdateProduct/UpdateProduct';
 
 function App() {
 
@@ -30,7 +33,10 @@ function App() {
         <Route exact path="/register" element={<Register />} />
         <Route exact path="/login" element={<LoginUser />} />
         <Route exact path="/Account" element={<Profile />} />
-        <Route isAdmin={true} exact path="/admin/dashboard" element={<Dashboard />} />
+        <Route  exact path="/admin/dashboard" element={<Dashboard />} />
+        <Route  exact path="/admin/products" element={<ProductList />} />
+        <Route exact path="/admin/product" element={<CreateProduct/>} />
+        <Route exact path="/admin/product/:id" element={<UpdateProduct/>} />
       </Routes>
 
 
