@@ -1,0 +1,31 @@
+.orderSuccess {
+    margin: auto;
+    text-align: center;
+    padding: 10vmax;
+    height: 49vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blanchedalmond;
+}
+
+.orderSuccess > svg {
+    font-size: 7vmax;
+    color: bisque;
+}
+
+.orderSuccess > p {
+    font-size: 2vmax;
+}
+
+.orderSuccess > a {
+    color: antiquewhite;
+    background-color: rgba(26, 26, 26, 0.542);
+    border: none;
+    padding: 1vmax 3vmax;
+    cursor: pointer;
+    font: 400 1.3vmax "Book Antiqua";
+    text-decoration: none;
+    margin: 2vmax;
+}

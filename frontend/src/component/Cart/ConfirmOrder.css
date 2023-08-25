@@ -1,0 +1,133 @@
+.confirmOrderPage {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 6fr 3fr;
+    color: blanchedalmond;
+}
+
+.confirmOrderPage > div:last-child {
+    border-left: 3px solid rgba(245, 245, 245, 0.044);
+}
+
+.confirmShippingArea {
+    padding: 5vmax;
+    padding-bottom: 0%;
+    border-bottom: 1px solid rgba(250, 235, 215, 0.303);
+}
+
+.confirmShippingArea > p {
+    font: 400 1.8vmax "Book Antiqua";
+}
+
+
+.confirmShippingAreaBox,
+.confirmCartItemsContainer {
+    margin: 2vmax;
+}
+
+.confirmShippingAreaBox > div {
+    display: flex;
+    margin: 1vmax 0;
+}
+
+.confirmShippingAreaBox > div > p {
+    font: 400 1.7vmax "Book Antiqua";
+}
+
+.confirmShippingAreaBox > div > span {
+    font: 400 1.7vmax "Book Antiqua";
+    margin-left: 0.3vmax;
+    color: rgba(245, 245, 220, 0.644);
+}
+
+.confirmCartItems {
+    padding: 5vmax;
+    padding-top: 2vmax;
+}
+
+.confirmCartItemsContainer {
+    max-height: 20vmax;
+    overflow-y: auto;
+}
+
+.confirmCartItemsContainer > div {
+    display: flex;
+    font: 400 1.4vmax "Book Antiqua";
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vmax 0;
+}
+
+.confirmCartItemsContainer > div > img {
+    width: 8vmax;
+}
+
+.confirmCartItemsContainer> div > a {
+    color: beige;
+    margin: 0 2vmax;
+    width: 60%;
+    text-decoration: none;
+}
+
+.confirmCartItemsContainer> div > span {
+    font: 300 1.6vmax "Book Antiqua";
+    color: rgb(182, 168, 150);
+}
+
+.orderSummary {
+    background-color: rgba(240, 240, 240, 0.051);
+    padding: 7vmax;
+}
+
+.orderSummary > p {
+    text-align: center;
+    font: 400 1.8vmax "Book Antiqua";
+    border-bottom: 1px solid antiquewhite;
+    padding: 1vmax;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+
+.orderSummary > div > div {
+    display: flex;
+    font: 400 1.4vmax "Book Antiqua";
+    justify-content: space-between;
+    margin: 2vmax 0;
+    color: rgb(247, 189, 119);
+}
+
+.orderSummary > div > div > span {
+    color: azure;
+    font: 600 1.4vmax "Book Antiqua";
+}
+
+.orderSummaryTotal {
+    display: flex;
+    font: 400 1.2vmax "Book Antiqua";
+    justify-content: space-between;
+    border-top: 1px solid antiquewhite;
+    padding: 2vmax 0;
+}
+
+.orderSummary > button {
+    border: none;
+    border-radius: 16px;
+    background-color: black;
+    color: rgb(248, 239, 226);
+    font: 800 1.2vmax "Book Antiqua";
+    width: 80%;
+    padding: 1vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    margin: 1vmax;
+    margin-left: 2vmax;
+}
+
+.orderSummary > button:hover {
+    background-color: rgba(0, 0, 0, 0.221);
+}
+
+
