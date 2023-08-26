@@ -1,0 +1,65 @@
+.paymentContainer {
+    display: grid;
+    place-items: center;
+    background-color: rgba(226, 222, 214, 0.029);
+    margin: 2vmax;
+    height: 66vh;
+}
+
+.paymentForm {
+    width: 22%;
+    height: 100%;
+}
+
+.paymentForm > p {
+    font: 400 2vmax "Book Antiqua";
+    color: beige;
+    border-bottom: 1px solid beige;
+    padding: 1vmax 0;
+    text-align: center;
+    width: 49%;
+    margin: auto;
+}
+
+.paymentForm > div {
+    display: flex;
+    align-items: center;
+    margin: 2vmax 0;
+}
+
+.paymentInput {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid antiquewhite;
+    border-radius: 4px;
+    outline: none;
+    color: beige;
+}
+
+.paymentForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: azure;
+}
+
+.paymentFormBtn {
+    border: none;
+    border-radius: 16px;
+    background-color: black;
+    color: rgb(248, 239, 226);
+    font: 800 1.2vmax "Book Antiqua";
+    width: 80%;
+    padding: 1vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    outline: none;
+    margin: 1vmax;
+    margin-left: 2vmax;
+}
+
+.paymentFormBtn:hover {
+    background-color: rgba(0, 0, 0, 0.42);
+}

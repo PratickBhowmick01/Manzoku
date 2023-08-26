@@ -4,7 +4,8 @@ import MetaData from "../../layout/Metadata/MetaData";
 import Loader from "../../layout/Loader/loader";
 import { Link, useNavigate } from "react-router-dom";
 import "./Profile.css";
-import img from "../../../images/pikachu.jpeg"
+import img from "../../../images/pikachu.jpeg";
+import Header from "../../layout/Header/Header.js";
 
 const Profile = ({ history }) => {
   const { user, loading, isAuthenticated } = useSelector((state) => state.user);
@@ -21,6 +22,7 @@ const Profile = ({ history }) => {
         <Loader />
       ) : (
         <Fragment>
+          <Header />
           <MetaData title={`${user.name}'s Profile`} />
           <div className="profileContainer" style={{ backgroundImage: `url(${img})` }}>
           {/* <img src={img} alt="Homepage" /> */}

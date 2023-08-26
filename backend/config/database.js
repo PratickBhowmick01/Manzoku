@@ -7,7 +7,7 @@ const database = module.exports =() =>{
     }
     try{
         mongoose.connect('mongodb+srv://mehnazfazal952:googoogaagaa@manzoku.knyfgjl.mongodb.net/?retryWrites=true&w=majority',connectonParams);
-        console.log("database connected succefully");
+        console.log("Database connected successfully");
         
     } catch (err) {
         console.log(err);

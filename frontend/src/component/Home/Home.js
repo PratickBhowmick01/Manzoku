@@ -2,7 +2,11 @@ import React, { Fragment, useEffect } from "react";
 import { CgMouse } from "react-icons/all";
 import Homepage from "../../images/Homepage.png";
 import "./Home.css";
+<<<<<<< HEAD
 import ProductCard from "../Home/ProductCard";
+=======
+import ProductCard from "./ProductCard.js";
+>>>>>>> 2ab2fc98e7131bf7f8dfe59f6b6280f11f480a9b
 import Header from "../layout/Header/Header.js";
 import Footer from "../layout/Footer/Footer.js";
 import Options from "../layout/Header/Options";
@@ -22,7 +26,7 @@ const Home = () => {
     const alert = useAlert();
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const { loading, error, products, productCount } = useSelector(
+    const { loading, error, products } = useSelector(
         (state) => state.products
     );
     const {isAuthenticated} = useSelector((state)=>state.user);
@@ -47,7 +51,7 @@ const Home = () => {
                 <div className="banner">
                     <img src={Homepage} alt="Homepage" />
                     <div>
-                        <p>Welcome to <b>Manzoku</b></p>
+                        <h1>Welcome To <b>Manzoku</b></h1>
                         
         
                         <a href="#container">

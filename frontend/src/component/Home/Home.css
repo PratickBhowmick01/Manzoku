@@ -1,4 +1,4 @@
-.banner > div {
+y.banner > div {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -10,12 +10,30 @@
 
 .banner > div > p {
     position: absolute;
-    background-color: rgba(219, 219, 219, 0.696);
-    border-radius: 600px;
+    background-color: rgba(10, 10, 10, 0.696);
+    
     margin-top: -70vmax;
+    margin-left: 70vmax;
     font: 600 5vmax "Book Antiqua";
-    color: #190e02;
+    color: #f4f3f2;
 
+}
+
+
+.banner > div > h1 {
+    position: absolute;
+    margin-top: -40vmax;
+    margin-left: 27vmax;
+    color: black;
+    background-color: #f4f3f26c;
+    border-radius: 20%;
+    font: 600 5vmax "Book Antiqua";
+}
+
+
+.banner > div > h1 > b {
+    color: rgb(47, 22, 2);
+    
 }
 
 .banner > div > p > b {
@@ -39,7 +57,7 @@
     
     position: absolute;
     margin-top: -27vmax;
-    margin-left: -4vmax;
+    margin-left: 47vmax;
     cursor:pointer;
     background-color: black;
     border: 4px solid black;

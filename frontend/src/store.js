@@ -4,7 +4,6 @@ import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import { deleteProductReducer, newProductReducer, productDetailsReducer, productReducer, updateProductReducer } from "./reducers/productReducer";
 import {allUsersReducer, profileReducer, userDetailsReducer, userReducer} from "./reducers/userReducer";
-import { cartReducer } from "./reducers/cartReducer";
 
 const reducer = combineReducers({
     products : productReducer,
@@ -19,13 +18,7 @@ const reducer = combineReducers({
     userDetails: userDetailsReducer,
 });
 
-let initialState = {
-    cart: {
-        cartItems: localStorage.getItem("cartItems")
-         ? JSON.parse(localStorage.getItem("cartItems"))
-         : [],
-    },
-};
+let initialState = {};
 
 const middleware = [thunk];
 

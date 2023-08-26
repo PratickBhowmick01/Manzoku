@@ -1,0 +1,16 @@
+.productsHeading {
+    margin: 2vmax auto;
+    width: 15vw;
+    border-bottom: 1px solid antiquewhite;
+    padding: 2vmax;
+    color: beige;
+    font: 1000 1.5vmax "Book Antiqua";
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5vmax;
+    justify-content: center;
+}

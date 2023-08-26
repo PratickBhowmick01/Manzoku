@@ -1,0 +1,48 @@
+.AboutUs > h1 {
+    color: rgb(27, 26, 26);
+    font: 1000 2vmax "Book Antiqua";
+    text-align: center;
+    border-bottom: 1px solid rgb(37, 37, 36);
+    padding: 1vmax;
+    width: 20vmax;
+    margin: auto;
+    margin-top: -52vmax;
+    margin-bottom: 4vmax;
+    margin-left: 38vmax;
+    position: absolute;
+
+    
+}
+
+.AboutUs > p {
+    flex: none;
+    flex-direction: column;
+    box-shadow: 0 0 5px rgba(60, 60, 59, 0.513);
+    border: 1px solid rgba(144, 143, 142, 0.213);
+    width: 60vmax;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 4vmax;
+    margin-top: -45vmax;
+    margin-left: 15vmax;
+    padding: 3vmax;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font: 1000 1.4vmax "Book Antiqua";
+    position: absolute;
+}
+
+
+
+
+.AboutUs > img {
+    filter: blur(1.7vmax);
+    -webkit-filter: blur(1.7px);
+  
+    height: 50%; 
+    width: 100%;
+    position: relative;
+    
+    
+  }
