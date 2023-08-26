@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { clearErrors, register } from '../../../actions/userAction';
 import './Register.css'
 
+
 const Register = () => {
   const navigate = useNavigate();
 
@@ -14,13 +15,13 @@ const Register = () => {
 
   useEffect(() => {
     if (error) {
-      // alert.error(error);
+      //alert.error(error);
       dispatch(clearErrors());
     }
     if(isAuthenticated){
-      navigate("/")
+      navigate("/account")
     }
-  }, [dispatch, error])
+  }, [dispatch, error, isAuthenticated])
 
   const [user, setUser] = useState({
     name: "",

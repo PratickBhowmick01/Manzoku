@@ -5,6 +5,7 @@
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@material-ui/core": "^4.12.4",
+    "@material-ui/data-grid": "^4.0.0-alpha.37",
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
     "@reduxjs/toolkit": "^1.9.5",
@@ -61,5 +62,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://192.168.1.102:4000"
+  "proxy": "http://192.168.1.103:4000"
 }
