@@ -23,7 +23,6 @@ const Options = ({ user }) => {
         { icon: <ExitToAppIcon />, name: "Logout", func: logoutUser },
     ];
 
-
     if (user.role === "admin") {
         options.unshift({
             icon: <DashboardIcon />,
@@ -33,7 +32,7 @@ const Options = ({ user }) => {
     }
 
     function dashboard() {
-        navigate("/dashboard");
+        navigate("/admin/dashboard");
     }
     function orders() {
         navigate("/orders");
