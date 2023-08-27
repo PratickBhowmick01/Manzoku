@@ -16,6 +16,8 @@ import ProductList from "./component/Admin/ProductList/ProductList"
 import CreateProduct from './component/Admin/CreateProduct/CreateProduct';  
 import UpdateProduct from './component/Admin/UpdateProduct/UpdateProduct';
 import UsersList from './component/Admin/UsersList/UsersList';
+import UpdateUser from "./component/Admin/UpdateUser/UpdateUser"
+import ProductReviews from "./component/Admin/ProductReviews/ProductReviews";
 
 function App() {
 
@@ -39,7 +41,9 @@ function App() {
         <Route exact path="/admin/product" element={<CreateProduct/>} />
         <Route exact path="/admin/product/:id" element={<UpdateProduct/>} />
         <Route exact path="/admin/users" element={<UsersList/>} />
-        <Route exact path="/admin/user/:id" element={<UsersList/>} />
+        <Route exact path="/admin/user/:id" element={<UpdateUser/>} />
+        <Route exact path="/admin/reviews" element={<ProductReviews/>} />
+        
       </Routes>
 
 
