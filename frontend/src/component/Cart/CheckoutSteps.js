@@ -10,17 +10,17 @@ const CheckoutSteps = ({activeStep}) => {
     const steps = [
         {
             label: <Typography style={{color: activeStep >= 0 ? 
-                "rgb(171, 142, 107)" : "white"}}>Shipping Details</Typography>,
+                "rgb(171, 142, 107)" : "black"}}>Shipping Details</Typography>,
             icon: <LocalShippingIcon />
         },
         {
             label: <Typography style={{color: activeStep >= 1 ? 
-                "rgb(171, 142, 107)" : "white"}}>Confirm Order</Typography>,
+                "rgb(171, 142, 107)" : "black"}}>Confirm Order</Typography>,
             icon: <LibraryAddCheckIcon />
         },
         {
             label: <Typography style={{color: activeStep >= 2 ? 
-                "rgb(171, 142, 107)" : "white"}}>Payment</Typography>,
+                "rgb(171, 142, 107)" : "black"}}>Payment</Typography>,
             icon: <AccountBalanceIcon />
         }
 
@@ -28,7 +28,8 @@ const CheckoutSteps = ({activeStep}) => {
 
     const stepStyles = {
         boxSizing: "border-box",
-        background: "none"
+        background: "none",
+        
     };
 
     return (
@@ -39,7 +40,7 @@ const CheckoutSteps = ({activeStep}) => {
                     completed={activeStep >= index ? true : false}
                     >
                         <StepLabel style={{color: activeStep >= index ? 
-                        "rgb(171, 142, 107)" : "white",
+                        "rgb(171, 142, 107)" : "black",
                     }}
                         icon={item.icon}>{item.label}</StepLabel>
 

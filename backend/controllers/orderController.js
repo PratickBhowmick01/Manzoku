@@ -86,9 +86,11 @@ exports.updateOrder = catchAsyncError(async (req, res, next) => {
         return next(new ErrorHandler("You have already delivered this order", 400));
     }
 
-    order.orderItems.forEach(async (o) => {
-        await updateStock(o.product, o.quantity);
-    });
+    if(req.body.status === "Shipped") {
+        order.orderItems.forEach(async (o) => {
+            await updateStock(o.product, o.quantity);
+        });
+    }
 
     order.orderStatus = req.body.status;
 
@@ -120,10 +122,11 @@ exports.deleteOrder = catchAsyncError(async (req, res, next) => {
         return next(new ErrorHandler("Order not found with this ID", 404));
     }
 
-    await order.remove();
+    await order.deleteOne();
 
     res.status(200).json({
-        success: true
+        success: true,
+        message:"Order deleted successfully"
     });
 });
 

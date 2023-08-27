@@ -36,11 +36,11 @@ const OrderDetails = () => {
             <Header />
             <div className="orderDetailsPage">
                 <div className="orderDetailsContainer">
-                    <Typography component="h1">
+                    <h1>
                         Order #{order && order._id}
 
-                    </Typography>
-                    <Typography>Shipping Info-</Typography>
+                    </h1>
+                    <h1 >Shipping Info-</h1>
                     <div className="orderDetailsContainerBox">
                         <div>
                             <p>Name:</p>
@@ -58,7 +58,7 @@ const OrderDetails = () => {
                         </div>
 
                     </div>
-                    <Typography>Payment-</Typography>
+                    <h1 >Payment-</h1>
                     <div className="orderDetailsContainerBox">
                         <div>
                             <p className={
@@ -80,7 +80,7 @@ const OrderDetails = () => {
                         </div>
 
                     </div>
-                    <Typography>Order Status-</Typography>
+                    <h1 >Order Status-</h1>
                     <div className="orderDetailsContainerBox">
                         <div>
                             <h2 className={order.orderStatus && order.orderStatus === "Delivered"
@@ -96,7 +96,7 @@ const OrderDetails = () => {
                 </div>
 
                 <div className="orderDetailsCartItems">
-                    <Typography>Ordered Items-</Typography>
+                    <h1 >Ordered Items-</h1>
                     <div className="orderDetailsCartItemsContainer">
                         {order.orderItems &&
                         order.orderItems.map((item) => (

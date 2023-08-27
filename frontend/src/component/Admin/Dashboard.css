@@ -74,6 +74,7 @@
   .doughnutChart {
     width: 30vmax;
     margin: auto;
+   
   }
   
   @media screen and (max-width: 600px) {

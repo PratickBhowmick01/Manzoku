@@ -2,11 +2,7 @@ import React, { Fragment, useEffect } from "react";
 import { CgMouse } from "react-icons/all";
 import Homepage from "../../images/Homepage.png";
 import "./Home.css";
-<<<<<<< HEAD
-import ProductCard from "../Home/ProductCard";
-=======
 import ProductCard from "./ProductCard.js";
->>>>>>> 2ab2fc98e7131bf7f8dfe59f6b6280f11f480a9b
 import Header from "../layout/Header/Header.js";
 import Footer from "../layout/Footer/Footer.js";
 import Options from "../layout/Header/Options";
@@ -16,6 +12,7 @@ import { useSelector, useDispatch } from "react-redux";
 import Loader from "../layout/Loader/loader.js";
 import {useAlert} from "react-alert";
 import { useNavigate } from "react-router-dom";
+import MetaData from "../layout/Metadata/MetaData.jsx";
 
 
 
@@ -46,6 +43,7 @@ const Home = () => {
             <Loader />
         ) : (
             <Fragment>
+                <MetaData title="Home" />
                 <Header />
                 
                 <div className="banner">

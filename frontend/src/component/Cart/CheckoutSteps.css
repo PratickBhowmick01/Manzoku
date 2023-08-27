@@ -4,15 +4,16 @@
 
 .MuiStepConnector-root {
     height: 1px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.488);
 }
 
 .MuiStepConnector-active,
 .MuiStepConnector-completed {
-    background-color: rgb(163, 129, 103);
+    background-color: rgb(160, 106, 65);
 }
 
 .MuiIcon {
     color: antiquewhite;
+    background-color: rgba(9, 9, 9, 0.019);
 }
 

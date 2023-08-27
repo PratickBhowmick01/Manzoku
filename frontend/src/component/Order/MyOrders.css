@@ -9,6 +9,8 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    color: rgb(252, 249, 249);
+    
 }
 
 .myOrdersHeading {
@@ -16,14 +18,15 @@
     font: 400 1.4vmax "Book Antiqua";
     padding: 0.6vmax;
     box-sizing: border-box;
-    color: rgb(239, 206, 169);
+    color: rgb(232, 194, 164);
     transition: all 0.6s;
-    background-color: rgb(32, 32, 32);
+    background-color:rgba(0, 0, 0, 0); 
 }
 
 .myOrdersTable {
     margin-top: 3vmax;
     margin-right: 1vmax;
+    color: rgb(241, 237, 232);
 }
 
 .myOrdersTable > div {
@@ -43,6 +46,7 @@
 
 .MuiDataGrid-columnHeader {
     padding: 1vmax !important;
-    background-color: rgba(70, 36, 2, 0.558);
+    background-color: rgba(184, 134, 93, 0.558);
+    
 }
 

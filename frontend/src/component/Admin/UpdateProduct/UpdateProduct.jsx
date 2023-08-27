@@ -176,28 +176,6 @@ const UpdateProduct = () => {
                             />
                         </div>
 
-                        {/* <div id="createProductFormFile">
-                            <input
-                                type="file"
-                                name="avatar"
-                                accept="image/*"
-                                onChange={updateProductImagesChange}
-                                multiple
-                            />
-                        </div>
-
-                        <div id="createProductFormImage">
-                            {oldImages &&
-                                oldImages.map((image, index) => (
-                                    <img key={index} src={image.url} alt="Old Product Preview" />
-                                ))}
-                        </div> */}
-
-                        {/* <div id="createProductFormImage">
-                            {imagesPreview.map((image, index) => (
-                                <img key={index} src={image} alt="Product Preview" />
-                            ))}
-                        </div> */}
 
                         <Button
                             id="createProductBtn"

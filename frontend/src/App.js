@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
-import React, { Suspense, useEffect } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Home from "./component/Home/Home.js";
 import LoginUser from './component/User/Login/LoginUser.jsx';
 import Register from './component/User/Register/Register.jsx';
@@ -23,20 +23,31 @@ import { loadStripe } from '@stripe/stripe-js';
 import OrderSuccess from "./component/Cart/OrderSuccess.js";
 import OrderDetails from "./component/Order/OrderDetails.js";
 import MyOrders from "./component/Order/MyOrders.js";
-import Profile from './component/User/Profile/Profile';
-import ProtectedRoute from './component/Route/ProtectedRoute';
 import Dashboard from "./component/Admin/Dashboard.jsx"
 import ProductList from "./component/Admin/ProductList/ProductList"
 import CreateProduct from './component/Admin/CreateProduct/CreateProduct';  
 import UpdateProduct from './component/Admin/UpdateProduct/UpdateProduct';
 import UsersList from './component/Admin/UsersList/UsersList';
+import OrderList from './component/Admin/OrderList/OrderList.js';
+import ProcessOrder from './component/Admin/OrderList/ProcessOrder.js';
 
 
 function App() {
 
   const { isAuthenticated, user } = useSelector((state) => state.user)
+
+  const [stripeApiKey, setStripeApiKey ] = useState("");
+
+  async function getStripeApiKey() {
+    const { data } = await axios.get("/api/v1/stripeapikey");
+
+    setStripeApiKey(data.stripeApiKey);
+  }
+
   useEffect(() => {
     store.dispatch(loadUser());
+
+    getStripeApiKey();
   }, []);
 
   
@@ -64,7 +75,9 @@ function App() {
             <Route exact path="/admin/product" element={<CreateProduct/>} />
             <Route exact path="/admin/product/:id" element={<UpdateProduct/>} />
             <Route exact path="/admin/users" element={<UsersList/>} />
+            <Route exact path="/admin/orders" element={<OrderList/>} />
             <Route exact path="/admin/user/:id" element={<UsersList/>} />
+            <Route exact path="/admin/order/:id" element={<ProcessOrder/>} />
             
             
             

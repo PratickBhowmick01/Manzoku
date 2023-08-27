@@ -1,11 +1,4 @@
-.orderDetailsContainer h1 {
-    font: 300 3vmax "Book Antiqua";
-    margin: 4vmax 0;
-    color: bisque;
-    border-bottom: 1px solid bisque;
-    border-width: 4px;
-    
-}
+
 
 .orderDetailsContainer h2 {
     font: 300 2vmax "Book Antiqua";
@@ -15,6 +8,7 @@
 .orderDetailsContainer {
     padding: 4.9vmax;
     padding-bottom: 0%;
+    color: rgb(71, 35, 5);
 }
 
 .orderDetailsContainer p {
@@ -82,4 +76,22 @@
 .orderDetailsCartItemsContainer div span {
     font: 100 1.7vmax "Book Antiqua";
 
+}
+
+.orderDetailsCartItems h1, 
+    .orderDetailsContainer h1 {
+        font: 300 3vmax "Book Antiqua";
+        margin: 4vmax 0;
+        color: rgb(193, 169, 140);
+        background-color: none;
+    
+
+}
+
+.orderDetailsContainer h1:first-child {
+    font: 300 4vmax "Book Antiqua";
+    margin: 4vmax 0;
+    color: rgb(200, 138, 63);
+    border-bottom: 2px solid rgb(174, 124, 58);
+    background-color: none;
 }

@@ -37,8 +37,8 @@ const Dashboard = () => {
         datasets: [
             {
                 label: "TOTAL AMOUNT",
-                backgroundColor: ["#F94C10"],
-                hoverBackgroundColor: ["rgb(197, 72, 49)"],
+                backgroundColor: ["rgb(75, 36, 6)"],
+                hoverBackgroundColor: ["rgb(241, 178, 112)"],
                 data: [0, 4000],
             },
         ],
@@ -47,8 +47,8 @@ const Dashboard = () => {
         labels: ["Out of Stock", "InStock"],
         datasets: [
             {
-                backgroundColor: ["#7091F5", "#793FDF"],
-                hoverBackgroundColor: ["#4B5000", "#35014F"],
+                backgroundColor: ["rgb(75, 36, 6)", "rgb(155,80,6)"],
+                hoverBackgroundColor: ["rgb(241, 178, 112)", "rgb(241, 178, 112)"],
                 data: [outOfStock, products.length-outOfStock],
             },
         ],
@@ -63,7 +63,7 @@ const Dashboard = () => {
                 <div className="dashboardSummary">
                     <div>
                         <p>
-                            Total Amount <br /> ৳100000
+                            Total Amount <br /> Tk.100000
                         </p>
                     </div>
                     <div className="dashboardSummaryBox2">
@@ -92,4 +92,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default Dashboard;

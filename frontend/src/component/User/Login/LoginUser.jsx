@@ -5,22 +5,22 @@ import Loader from '../../layout/Loader/loader.js';
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { clearErrors, login } from '../../../actions/userAction';
-// import { useAlert } from "react-alert";
+import { useAlert } from "react-alert";
 
 const LoginUser = ({history}) => {
 
   const navigate = useNavigate();
   const location = useLocation();
   const dispatch = useDispatch();
-  // const alert = useAlert();
+  const alert = useAlert();
 
   const { error, loading, isAuthenticated } = useSelector((state) => state.user);
 
-  const redirect = location.search ? location.search.split("=")[1] : "/account";
+  const redirect = location.search ? location.search.split("=")[1] : "/";
 
   useEffect(() => {
     if (error) {
-      alert(error);
+      alert.error(error);
       dispatch(clearErrors());
     }
     if(isAuthenticated){

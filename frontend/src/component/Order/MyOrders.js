@@ -6,7 +6,6 @@ import { clearError, myOrders } from "../../actions/orderAction";
 import Loader from "../layout/Loader/loader.js";
 import { Link } from "react-router-dom";
 import { useAlert } from "react-alert";
-import { Typography } from "@material-ui/core";
 import MetaData from "../layout/Metadata/MetaData.jsx";
 import LaunchIcon from "@material-ui/icons/Launch";
 import Header from "../layout/Header/Header.js";
@@ -105,7 +104,7 @@ const MyOrders = () => {
                    className="myOrdersTable"
                    autoHeight/>
 
-                   <Typography className="myOrdersHeading">{user.name}'s Orders</Typography>
+                   <h1 className="myOrdersHeading">{user.name}'s Orders</h1>
                 </div>
 
             </Fragment>
