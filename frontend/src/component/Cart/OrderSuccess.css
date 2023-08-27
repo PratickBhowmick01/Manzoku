@@ -21,11 +21,16 @@
 
 .orderSuccess > a {
     color: antiquewhite;
-    background-color: rgba(26, 26, 26, 0.542);
+    background-color: rgba(74, 74, 74, 0.657);
     border: none;
     padding: 1vmax 3vmax;
     cursor: pointer;
     font: 400 1.3vmax "Book Antiqua";
     text-decoration: none;
     margin: 2vmax;
+}
+
+.orderSuccess a:hover {
+    background-color: rgba(250, 235, 215, 0.249);
+    transition: all 0.49s;
 }

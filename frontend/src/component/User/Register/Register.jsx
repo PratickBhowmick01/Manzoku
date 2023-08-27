@@ -5,22 +5,25 @@ import Loader from '../../layout/Loader/loader.js';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearErrors, register } from '../../../actions/userAction';
 import './Register.css'
+import {useAlert} from "react-alert";
+
 
 const Register = () => {
   const navigate = useNavigate();
 
   const dispatch = useDispatch();
+  const alert = useAlert();
   const { error, loading, isAuthenticated } = useSelector((state) => state.user);
 
   useEffect(() => {
     if (error) {
-      // alert.error(error);
+      alert.error(error);
       dispatch(clearErrors());
     }
     if(isAuthenticated){
       navigate("/")
     }
-  }, [dispatch, error])
+  }, [dispatch, error, isAuthenticated])
 
   const [user, setUser] = useState({
     name: "",

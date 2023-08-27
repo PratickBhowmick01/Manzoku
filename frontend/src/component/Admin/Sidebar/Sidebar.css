@@ -23,7 +23,7 @@
     transition: all 0.5s;
   }
   .sidebar a:hover {
-    color: rgb(31, 250, 213);
+    color: rgb(197, 132, 36);
     transform: scale(1.1);
   }
   

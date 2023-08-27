@@ -1,0 +1,52 @@
+.myOrdersPage {
+    width: 100vw;
+    max-width: 100%;
+    padding: 0 7vmax;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: rgb(252, 249, 249);
+    
+}
+
+.myOrdersHeading {
+    text-align: center;
+    font: 400 1.4vmax "Book Antiqua";
+    padding: 0.6vmax;
+    box-sizing: border-box;
+    color: rgb(232, 194, 164);
+    transition: all 0.6s;
+    background-color:rgba(0, 0, 0, 0); 
+}
+
+.myOrdersTable {
+    margin-top: 3vmax;
+    margin-right: 1vmax;
+    color: rgb(241, 237, 232);
+}
+
+.myOrdersTable > div {
+    font: 300 1.2vmax "Book Antiqua";
+    color: rgb(244, 218, 179);
+    border: none;
+}
+
+.myOrdersTable a {
+    color: rgb(255, 255, 255);
+    transition: all 0.6s;
+}
+
+.myOrdersTable a:hover {
+    color: rgb(195, 130, 50);
+}
+
+.MuiDataGrid-columnHeader {
+    padding: 1vmax !important;
+    background-color: rgba(184, 134, 93, 0.558);
+    
+}
+

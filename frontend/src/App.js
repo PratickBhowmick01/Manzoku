@@ -11,11 +11,6 @@ import { useSelector } from 'react-redux';
 import ProductDetails from './component/ProductDetails/ProductDetails.js';
 import Profile from './component/User/Profile/Profile';
 import ProtectedRoute from './component/Route/ProtectedRoute';
-import Dashboard from "./component/Admin/Dashboard.jsx"
-import ProductList from "./component/Admin/ProductList/ProductList"
-import CreateProduct from './component/Admin/CreateProduct/CreateProduct';  
-import UpdateProduct from './component/Admin/UpdateProduct/UpdateProduct';
-import UsersList from './component/Admin/UsersList/UsersList';
 import UpdateUser from "./component/Admin/UpdateUser/UpdateUser"
 import ProductReviews from "./component/Admin/ProductReviews/ProductReviews";
 

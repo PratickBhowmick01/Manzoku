@@ -1,0 +1,97 @@
+
+
+.orderDetailsContainer h2 {
+    font: 300 2vmax "Book Antiqua";
+    
+}
+
+.orderDetailsContainer {
+    padding: 4.9vmax;
+    padding-bottom: 0%;
+    color: rgb(71, 35, 5);
+}
+
+.orderDetailsContainer p {
+    font: 400 1.8vmax "Book Antiqua";
+    color: antiquewhite;
+}
+
+.orderDetailsContainerBox,
+.orderDetailsCartItemsContainer {
+    margin: 2vmax;
+}
+
+.orderDetailsContainerBox div {
+    display: flex;
+    margin: 1vmax 0;
+}
+
+.orderDetailsContainerBox div p {
+    font: 400 1.7vmax "Book Antiqua";
+    color: rgb(245, 245, 244);
+}
+
+.orderDetailsContainerBox div span {
+    margin: 0 1vmax;
+    font: 400 2vmax "Book Antiqua";
+    color: rgb(143, 125, 104);
+}
+
+
+.orderDetailsCartItems {
+    padding: 2vmax 5vmax ;
+    border-top: 1px solid rgba(255, 235, 205, 0.158);
+}
+
+.orderDetailsCartItems p {
+    font: 400 1.8vmax "Book Antiqua";
+    color: blanchedalmond;
+}
+
+
+.orderDetailsCartItemsContainer div {
+    display: flex;
+    font: 400 1.6vmax "Book Antiqua";
+    align-items: center;
+    margin: 2vmax 0;
+    color: blanchedalmond;
+}
+
+.orderDetailsCartItemsContainer div img {
+    width: 10vmax;
+}
+
+.orderDetailsCartItemsContainer div a {
+    color: rgb(228, 177, 116);
+    margin: 0 2vmax;
+    width: 60%;
+    text-decoration: none;
+}
+
+.orderDetailsCartItemsContainer div a:hover {
+    color: rgb(255, 255, 255);
+    transition: all 0.4s;
+}
+
+.orderDetailsCartItemsContainer div span {
+    font: 100 1.7vmax "Book Antiqua";
+
+}
+
+.orderDetailsCartItems h1, 
+    .orderDetailsContainer h1 {
+        font: 300 3vmax "Book Antiqua";
+        margin: 4vmax 0;
+        color: rgb(193, 169, 140);
+        background-color: none;
+    
+
+}
+
+.orderDetailsContainer h1:first-child {
+    font: 300 4vmax "Book Antiqua";
+    margin: 4vmax 0;
+    color: rgb(200, 138, 63);
+    border-bottom: 2px solid rgb(174, 124, 58);
+    background-color: none;
+}

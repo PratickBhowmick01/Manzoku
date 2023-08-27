@@ -63,3 +63,8 @@
 .paymentFormBtn:hover {
     background-color: rgba(0, 0, 0, 0.42);
 }
+
+.paymentContainer h1 {
+    color: bisque;
+    margin-left: 4.9vmax;
+}

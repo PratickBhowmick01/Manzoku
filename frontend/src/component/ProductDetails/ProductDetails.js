@@ -1,8 +1,8 @@
-import { React, Fragment, useEffect, useState } from "react";
+import { React, Fragment, useEffect } from "react";
 import Carousel from "react-material-ui-carousel";
 import "./ProductDetails.css";
 import { useSelector, useDispatch } from "react-redux";
-import { clearError, getProductDetails, newReview } from "../../actions/productAction.js";
+import { getProductDetails, newReview } from "../../actions/productAction.js";
 import { useParams } from "react-router-dom";
 import Header from "../layout/Header/Header.js";
 import ReactStars from "react-rating-stars-component";

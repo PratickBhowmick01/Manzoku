@@ -16,7 +16,7 @@
     color: rgb(165, 164, 161);
 }
 
-.emptyCart > p {
+.emptyCart > h1 {
     font-size: 3vmax;
 }
 
