@@ -124,7 +124,7 @@ export const updateUser = (id, userData) => async (dispatch) => {
     const config = { headers: { "Content-Type": "application/json" } };
 
     const { data } = await axios.put(
-      `/api/v1/admin/user/${id}`,
+      `/api/v1/admin/update/user/${id}`,
       userData,
       config
     );

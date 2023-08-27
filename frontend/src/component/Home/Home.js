@@ -2,7 +2,11 @@ import React, { Fragment, useEffect } from "react";
 import { CgMouse } from "react-icons/all";
 import Homepage from "../../images/Homepage.png";
 import "./Home.css";
+<<<<<<< HEAD
+import ProductCard from "../Home/ProductCard";
+=======
 import ProductCard from "./ProductCard.js";
+>>>>>>> c21e6462ac64378d4b001b2be28b3a6e9c353568
 import Header from "../layout/Header/Header.js";
 import Footer from "../layout/Footer/Footer.js";
 import Options from "../layout/Header/Options";
